@@ -8,28 +8,27 @@ import styles from './style.module.scss';
 const projects = [
   {
     title: "WeAct Tech",
-    src: "c2montreal.png",
-    color: "#000000"
+    src: "weact.png",
+    color: "#000000",
+    link:""
   },
   {
     title: "Kannan Studio",
-    src: "officestudio.png",
-    color: "#8C8C8C"
+    src: "studio.png",
+    color: "#8C8C8C",
+    link:""
   },
   {
     title: "Modern Coolers",
-    src: "locomotive.png",
-    color: "#EFE8D3"
+    src: "moderncooler.png",
+    color: "#EFE8D3",
+    link:""
   },
   {
     title: "RideAxis",
-    src: "silencio.png",
-    color: "#706D63"
-  },
-  {
-    title: "SpeakerHaven",
-    src: "officestudio.png",
-    color: "#000000"
+    src: "cycle.png",
+    color: "#706D63",
+    link:""
   }
 ];
 
@@ -80,7 +79,7 @@ export default function Home() {
   };
 
   return (
-    <main onMouseMove={(e) => { moveItems(e.clientX, e.clientY) }} className={styles.projects}>
+    <main onMouseMove={(e) => { moveItems(e.clientX, e.clientY) }} onClick={""} className={styles.projects}>
       <div className={styles.body}>
         {projects.map((project, index) => (
           <Project key={index} index={index} title={project.title} manageModal={manageModal} />

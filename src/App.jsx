@@ -1,42 +1,44 @@
+// src/App.js
 import React, { useEffect, useState } from "react";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
-import Contact from './components/Contact';
-import Description from "./components/Description/index";
-import Preloader from './components/Preloader'; // Import the Preloader component
-import Home from "./components/Projects";
-import Header from './components/header/Header';
-import Slides from "./components/slides/Slides";
+import Preloader from "./components/Preloader";
+import Contact from "./routes/contact/contact";
+import Homepage from "./routes/homepage/homepage";
 
 const App = () => {
-  const [loading, setLoading] = useState(true); // State to manage loading status
+  const [loading, setLoading] = useState(true);
+  const location = useLocation();
 
   useEffect(() => {
-    (async () => {
-      const LocomotiveScroll = (await import("locomotive-scroll")).default;
-      const locomotiveScroll = new LocomotiveScroll();
+    setLoading(true);
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1000); // Simulating a 1-second load time for demonstration purposes
 
-      // Simulate loading delay
-      setTimeout(() => {
-        setLoading(false); // Set loading to false after the simulated delay
-      }, 5000); // Adjust the time as needed
-    })();
-  }, []);
+    return () => clearTimeout(timer);
+  }, [location]);
 
   return (
     <div className="App">
       {loading ? (
-        <Preloader /> // Show preloader while loading
+        <Preloader route={location.pathname} />
       ) : (
-        <>
-          <Header />
-          <Description />
-          <Home />
-          <Slides />
-          <Contact />
-        </>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/home" element={<Homepage />} />
+          {/* <Route path="/about" element={<About />} /> */}
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
       )}
     </div>
   );
 };
 
-export default App;
+const WrappedApp = () => (
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+);
+
+export default WrappedApp;

@@ -4,6 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import React, { useLayoutEffect, useRef, useState } from "react";
 import DarkOverlay from "../../styles/darkoverlay/DarkOverlay";
 import { menuSlide, slide } from "../../utils/anim";
+import { DecoderText } from "../decoder-text";
 import "./Header.css";
 
 const Header = () => {
@@ -95,11 +96,11 @@ const Header = () => {
     <section className="h-wrapper">
       <DarkOverlay isActive={isActive} />
       <div className="navigation">
-        <div className="logo">© Code by ash</div>
+        <div className="logo">© Code by <DecoderText text="Aswin" delay={500} /></div>
         <div className="menu">
-          <a href="#">Work</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
+          <a href="/work">Work</a>
+          <a href="/about">About</a>
+          <a href="/contact">Contact</a>
         </div>
         <div
           ref={btn}
@@ -128,7 +129,7 @@ const Header = () => {
                   initial="initial"
                   animate="enter"
                   exit="exit"
-                  href="#"
+                  href="/"
                 >
                   Home
                 </motion.a>
@@ -137,7 +138,7 @@ const Header = () => {
                   initial="initial"
                   animate="enter"
                   exit="exit"
-                  href="#"
+                  href="/work"
                 >
                   Work
                 </motion.a>
@@ -146,7 +147,7 @@ const Header = () => {
                   initial="initial"
                   animate="enter"
                   exit="exit"
-                  href="#"
+                  href="/about"
                 >
                   About
                 </motion.a>
@@ -155,7 +156,7 @@ const Header = () => {
                   initial="initial"
                   animate="enter"
                   exit="exit"
-                  href="#"
+                  href="/contact"
                 >
                   Contact
                 </motion.a>
@@ -163,9 +164,9 @@ const Header = () => {
               <div className="socials-container">
                 <div className="socials-heading">socials</div>
                 <div className="socials">
-                  <a href="#">GitHub</a>
-                  <a href="#">Instagram</a>
-                  <a href="#">Linkedln</a>
+                  <a href="https://github.com/aswin09032006">GitHub</a>
+                  <a href="https://www.instagram.com/aswxn._03/?hl=en">Instagram</a>
+                  <a href="https://www.linkedin.com/in/vkaswin">Linkedln</a>
                 </div>
               </div>
             </div>

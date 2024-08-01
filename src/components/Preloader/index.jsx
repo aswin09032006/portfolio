@@ -4,7 +4,35 @@ import { useEffect, useState } from 'react';
 import { opacity, slideUp } from './anim';
 import styles from './style.module.scss';
 
-const words = ["Hello", "Bonjour", "Ciao", "Olà", "やあ", "Hallå", "Guten tag", "Hallo"]
+const words = [
+    "Hallo",
+    "Bonjour",
+    "Ciao",
+    "Olà",
+    "やあ",
+    "Hallå",
+    "Guten tag",
+    "Hola",
+    "안녕하세요",
+    "Привет",
+    "Nǐ hǎo",
+    "Salam",
+    "Selam",
+    "Szervusz",
+    "Hej",  
+    "Ahoj",
+    "Namaste",
+    "Shalom",
+    "Kia ora",
+    "Sawubona",
+    "Szia",
+    "Xin chào",
+    "Sveiki",
+    "Tere",
+    "Yassou",
+    "Merhaba",
+    "Hello"
+];
 
 export default function Index() {
     const [index, setIndex] = useState(0);

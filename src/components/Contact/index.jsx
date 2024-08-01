@@ -41,10 +41,10 @@ export default function Index() {
                 </div>
                 <div className={styles.nav}>
                     <Rounded>
-                        <p>vkaswinkanan@gmail.com</p>
+                        <p><a href="mailto:vkaswinkanan@gmail.com" style={{color:'white'}}>vkaswinkanan@gmail.com</a></p>
                     </Rounded>
                     <Rounded>
-                        <p>+91 94885 12807</p>
+                        <p><a href="tel:+919488512807" style={{color:'white'}}>+91 94885 12807</a></p>
                     </Rounded>
                 </div>
                 <div className={styles.info}>
@@ -62,17 +62,17 @@ export default function Index() {
                         <span>
                             <h3>Socials</h3>
                             <Magnetic>
-                                <p>GitHub</p>
+                            <p> <a href="https://github.com/aswin09032006" style={{color:'white'}}>GitHub</a></p>
                             </Magnetic>
                         </span>
                         <Magnetic>
-                            <p>Instagram</p>
+                            <p><a href="https://www.instagram.com/aswxn._03" style={{color:'white'}}>Instagram</a></p>
                         </Magnetic>
                         {/* <Magnetic>
                             <p>Dribbble</p>
                         </Magnetic> */}
                         <Magnetic>
-                            <p>LinkedIn</p>
+                            <p><a href="https://www.linkedin.com/in/vkaswin" style={{color:'white'}}>Linkedin</a></p>
                         </Magnetic>
                     </div>
                 </div>
