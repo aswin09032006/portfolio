@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import gsap from 'gsap';
 import React, { useEffect, useRef, useState } from 'react';
 import Rounded from '../RoundedButton';
-import Project from './components/Project';
+import Project from './project_components/project';
 import styles from './style.module.scss';
 
 const projects = [
