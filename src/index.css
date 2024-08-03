@@ -6,7 +6,22 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body{
+	overscroll-behavior: none;
+}
 
+::selection {
+	background: #455CE9;
+	color: black;
+  }
+  .element-selector:focus {
+	outline: none !important;
+  }
+
+  .element-selector:focus {
+	outline: 2px solid transparent;
+  }
+  
 @font-face {
 	font-family: Neue-light;
 	src: url(./font/NeueMontreal-Light.otf);
