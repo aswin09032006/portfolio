@@ -1,13 +1,14 @@
-body{
+body {
     overflow-x: hidden;
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     display: none;
 }
 
-.not-compatible-container{
+.not-compatible-container {
     background: #000;
     min-height: 100vh;
     min-width: 100vw;
@@ -17,30 +18,31 @@ body{
     justify-content: center;
 }
 
-.flatlined-video{
+.flatlined-video {
     padding: 20px;
     max-width: 500px;
     height: auto;
 }
 
-.not-compatible-text{
-    font-size: 1.5rem;
+.not-compatible-text {
+    font-size: 1rem;
     margin-top: 1%;
     color: white;
-    max-width: 70%;
-    text-align: center;
+    max-width: 70vw;
+    text-align: justify;
 }
 
-.emotional-support-button{
+.emotional-support-button {
     background: rgba(255, 255, 255, 0.54);
     color: black;
     padding: 8px;
-    margin-top: 30px;
     border: none;
     border-radius: 10px;
     transition: all 0.5s ease-in;
     margin-bottom: 50px;
+    margin-top: 10px;
 }
-.emotional-support-button:hover{
+
+.emotional-support-button:hover {
     background: beige;
 }
