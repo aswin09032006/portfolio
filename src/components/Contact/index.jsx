@@ -7,25 +7,31 @@ import styles from './style.module.scss';
 
 export default function Index() {
     const container = useRef(null);
+    const emojiRef = useRef(null);
+
     const { scrollYProgress } = useScroll({
         target: container,
         offset: ["start end", "end end"]
-    })
-    const x = useTransform(scrollYProgress, [0, 1], [0, 100])
-    const y = useTransform(scrollYProgress, [0, 1], [-500, 0])
-    const rotate = useTransform(scrollYProgress, [0, 1], [120, 90])
-    
+    });
+    const x = useTransform(scrollYProgress, [0, 1], [0, 100]);
+    const y = useTransform(scrollYProgress, [0, 1], [-500, 0]);
+    const rotate = useTransform(scrollYProgress, [0, 1], [120, 90]);
+
+    const handleMouseMove = (e) => {
+        if (emojiRef.current) {
+            emojiRef.current.style.left = `${e.clientX}px`;
+            emojiRef.current.style.top = `${e.clientY}px`;
+        }
+    };
+
     return (
-        <motion.div style={{ y }} ref={container} className={styles.contact}>
+        <motion.div style={{ y }} ref={container} className={styles.contact} onMouseMove={handleMouseMove}>
+            <div className={styles.emoji} ref={emojiRef}>💡</div>
             <div className={styles.body}>
                 <div className={styles.title}>
                     <span>
                         <div className={styles.imageContainer}>
-                            <img 
-                                src={prof} 
-                                alt="image" 
-                                className={styles.image} 
-                            />
+                            <img src={prof} alt="" />
                         </div>
                         <h2>Let's work</h2>
                     </span>
@@ -78,5 +84,5 @@ export default function Index() {
                 </div>
             </div>
         </motion.div>
-    )
+    );
 }

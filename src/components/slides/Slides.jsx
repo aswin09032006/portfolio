@@ -2,6 +2,14 @@ import { useScroll, useTransform } from "framer-motion";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import React, { useLayoutEffect, useRef } from "react";
+import p7 from '../../images/cycle1.png';
+import p2 from '../../images/cycle2.png';
+import p3 from '../../images/moderncooler.png';
+import p4 from '../../images/speaker.png';
+import p6 from '../../images/speaker1.png';
+import p8 from '../../images/speaker2.png';
+import p5 from '../../images/studio.png';
+import p1 from '../../images/weact.png';
 import "./Slides.css";
 
 const Slides = () => {
@@ -48,30 +56,30 @@ const Slides = () => {
     <section ref={wrapper} className="s-wrapper">
       <div ref={firstRow} className="first-row">
         <div className="box">
-          <img src="src/images/c2montreal.png" alt="p1" />
+          <img src={p1} alt="p1" />
         </div>
         <div className="box">
-          <img src="src/images/funny.jpg" alt="p2" />
+          <img src={p2} alt="p2" />
         </div>
         <div className="box">
-          <img src="src/images/powell.jpg" alt="p3" />
+          <img src={p3} alt="p3" />
         </div>
         <div className="box">
-          <img src="src/images/locomotive.png" alt="p4" />
+          <img src={p4} alt="p4" />
         </div>
       </div>
       <div ref={secondtRow} className="second-row">
         <div className="box">
-          <img src="src/images/silencio.png" alt="p5" />
+          <img src={p5} alt="p5" />
         </div>
         <div className="box">
-          <img src="src/images/officestudio.png" alt="p6" />
+          <img src={p6} alt="p6" />
         </div>
         <div className="box">
-          <img src="src/images/wix.jpg" alt="p7" />
+          <img src={p7} alt="p7" />
         </div>
         <div className="box">
-          <img src="src/images/panda.jpg" alt="p8" />
+          <img src={p8} alt="p8" />
         </div>
       </div>
       {/* <motion.div style={{ height }} className="circle-container">

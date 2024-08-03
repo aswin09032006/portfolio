@@ -105,7 +105,7 @@ const Header = () => {
         <div
           ref={btn}
           onClick={toggleMenu}
-          style={{ backgroundColor: isActive ? "#455CE9" : "" }}
+          style={{ backgroundColor: isActive ? "#455CE9" : "" ,transition:"all 0.5s ease"}}
           className="button"
         >
           <div className={`burger ${isActive ? `burgerActive` : ``}`}></div>
