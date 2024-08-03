@@ -60,8 +60,8 @@ export default function Index() {
                             <p>2024 © Edition</p>
                         </span>
                         <span>
-                            <h3>Version</h3>
-                            <p>11:11 PM GMT+5:30</p>
+                            <h3>ReadMe</h3>
+                            <p><a href="readme" style={{color:"white"}}>Click to read</a></p>
                         </span>
                     </div>
                     <div>
