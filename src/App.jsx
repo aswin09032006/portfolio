@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Readme from "../readme";
 import "./App.css";
 import Preloader from "./components/Preloader";
 import flatline from './images/flatline.mp4';
@@ -75,6 +76,7 @@ const App = () => {
         <Route path="/" element={<Homepage />} />
         <Route path="/home" element={<Homepage />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/readme" element={<Readme />} />
       </Routes>
     </BrowserRouter>
   );
