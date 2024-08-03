@@ -1,6 +1,6 @@
 # Aswin's Development Portfolio
 
-[![Website Status](https://img.shields.io/website-up-down-green-red/https://aswin-dev.vercel.app.svg)](https://aswin-dev.vercel.app/)
+[Visit Website](https://aswin-dev.vercel.app/)
 
 ## Description
 Welcome to Aswin's Development Portfolio! This website is currently under construction, and I am in the process of building a showcase for my skills and projects as a web developer.
