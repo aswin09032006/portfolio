@@ -14,7 +14,7 @@ const Readme = () => {
       color: '#333',
     },
     title: {
-      fontSize: '2.5rem',
+      fontSize: '2rem',
       marginBottom: '20px',
     },
     subtitle: {
