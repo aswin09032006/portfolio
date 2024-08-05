@@ -45,27 +45,24 @@ const App = () => {
   if (!isCompatible) {
     return (
       <div className="not-compatible-container">
+        <h1 className="not-compatible-text">Aswin's Development Portfolio</h1>
+        <h2 className="not-compatible-text">Under Construction</h2>
+        <p className="not-compatible-text">
+          Please switch to a device with a screen width greater than 1200 pixels for an optimal experience. This feature will be available on smaller screens soon.
+        </p>
         <video width="100%" height="auto" autoPlay loop muted className="flatlined-video">
           <source src={flatline} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <h1 className="not-compatible-text">Aswin's Development Portfolio</h1>
-        <h2 className="not-compatible-text">Under Construction</h2>
-        <p className="not-compatible-text">
-          Welcome to my portfolio! I am currently working on building a showcase for my skills and projects as a web developer. Please check back later for updates!
-        </p>
         <p className="not-compatible-text">
           For inquiries, feel free to reach out via email at{' '}
           <a href="mailto:vkawinkanan@gmail.com" className="not-compatible-text" style={{color:"red"}}>vkawinkanan@gmail.com</a>.
         </p>
-        <p className="not-compatible-text">
-          Please switch to a device with a screen width greater than 1200 pixels for an optimal experience. This feature will be available on smaller screens soon.
-        </p>
-        <a href="https://youtu.be/gvyUuxdRdR4?si=gXiR0vbOAH4HLBlq">
-          <button className="emotional-support-button">
-            Emotional Support
-          </button>
+        <a href="https://youtu.be/Eo-KmOd3i7s?si=1TYxBD57EsuoTOZP">
+        <button className="esbtn"><i className="animation"></i>Emotional Support<i className="animation"></i>
+        </button>
         </a>
+        {/* <TicTacToe/> */}
       </div>
     );
   }
